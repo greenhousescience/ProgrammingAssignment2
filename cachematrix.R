@@ -26,7 +26,7 @@ list(set=set, get=get, setInverse=setInverse, getInverse=getInverse)
 
 cacheSolve <- function(x, ...) {
         Inv <- x$getInverse()
-        If (!is.null(Inv))   
+        if (!is.null(Inv))   
         message("Getting cached data")
         return(Inv)
                
